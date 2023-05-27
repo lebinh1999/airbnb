@@ -1,9 +1,9 @@
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/app/components/Navbar/Navbar";
 import "./globals.css";
 import { Nunito } from "next/font/google";
-import ClientOnly from "@/components/ClientOnly";
-import RegisterModal from "@/components/Modals/RegisterModal";
-import ToasterProvider from "@/providers/ToasterProvider";
+import ClientOnly from "@/app/components/ClientOnly";
+import RegisterModal from "@/app/components/Modals/RegisterModal";
+import ToasterProvider from "@/app/providers/ToasterProvider";
 
 const nunito = Nunito({ subsets: ["latin"] });
 

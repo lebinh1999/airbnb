@@ -3,7 +3,7 @@ import { AiFillGithub } from "react-icons/ai";
 import axios from "axios";
 import { FcGoogle } from "react-icons/fc";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import useRegisterModal from "@/hooks/useRegisterModal";
+import useRegisterModal from "@/app/hooks/useRegisterModal";
 import { useState } from "react";
 import Modal from "./Modal";
 import Heading from "../Heading/Heading";
@@ -30,8 +30,8 @@ const RegisterModal = () => {
     axios
       .post("/api/register", data)
       .then(() => {
-        console.log(data);
         registerModal.onClose();
+        toast.success("register successfully");
       })
       .catch((error) => {
         toast.error(error);
