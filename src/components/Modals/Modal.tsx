@@ -81,7 +81,7 @@ const Modal: React.FC<Props> = ({
             `}
           >
             <div
-              className="translate h-full lg:h-full lg:h-auto md:h-auto border-0 
+              className="translate h-full lg:h-full md:h-auto border-0 
             rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none"
             >
               {/* HEADER */}

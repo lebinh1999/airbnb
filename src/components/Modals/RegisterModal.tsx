@@ -30,10 +30,11 @@ const RegisterModal = () => {
     axios
       .post("/api/register", data)
       .then(() => {
+        console.log(data);
         registerModal.onClose();
       })
       .catch((error) => {
-        toast.error("error");
+        toast.error(error);
       })
       .finally(() => {
         setIsLoading(false);

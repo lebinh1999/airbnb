@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
 import { Nunito } from "next/font/google";
 import ClientOnly from "@/components/ClientOnly";
-import RegisterModal from "@/components/Modals /RegisterModal";
+import RegisterModal from "@/components/Modals/RegisterModal";
 import ToasterProvider from "@/providers/ToasterProvider";
 
 const nunito = Nunito({ subsets: ["latin"] });
