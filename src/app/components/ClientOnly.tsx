@@ -6,11 +6,11 @@ interface Props {
 }
 
 const ClientOnly: React.FC<Props> = ({ children }) => {
-  const [hasMoundted, setHasMoundted] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
   useEffect(() => {
-    setHasMoundted(true);
+    setHasMounted(true);
   }, []);
-  if (!hasMoundted) {
+  if (!hasMounted) {
     return null;
   }
   return <>{children}</>;
