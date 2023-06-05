@@ -49,7 +49,7 @@ export const authOptions: AuthOptions = {
         );
 
         if (!isCorrectPassword) {
-          throw new Error("Invaid credentials");
+          throw new Error("Invalid credentials");
         }
         return user;
       },
